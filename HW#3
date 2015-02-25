@@ -1,0 +1,8 @@
+int[\[Delta]t_ , \[Epsilon]_ ] := -1/(2*Pi*I)*
+  Integrate[
+   Exp[-I*\[Omega]*\[Delta]t]/(\[Omega] + 
+      I*\[Epsilon]), {\[Omega], -\[Infinity], \[Infinity]}]
+Plot[Evaluate[
+  Table[int[\[Delta]t, \[Epsilon]], {\[Epsilon], {0.1, 0.01, 
+     0.001}}]], {\[Delta]t, -1, 1}]
+     
